@@ -5,7 +5,7 @@ Here are simple functional tests for OTRS using CasperJS framework.
 
 Setup
 -----
-Here is an setup for CentOS 6.5/x86_64:
+Instructions for CentOS 6.5/x86_64:
 
 Install PhantomJS browser from http://phantomjs.org/download.html, for example:
 
@@ -22,5 +22,18 @@ Have installed OTRS 3.2 or you may try my docker image from https://registry.hub
 Set your PATH variable to include phantomjs and casperjs, for example:
 
 	export PATH=/opt/phantomjs-1.9.7-linux-x86_64/bin:/opt/n1k0-casperjs-4f105a9/bin:$PATH
+
+Customize otrs_settings.js - at least url, login and passwd.
+
+Run tests:
+
+	./run_me.sh
+
+
+Resources
+---------
+
+* http://docs.casperjs.org/en/latest/testing.html
+* http://phantomjs.org/
 
 
